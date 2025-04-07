@@ -161,7 +161,7 @@ const Dashboard = () => {
                             </div>
                             <div className="text-sm">
                               <span className="text-gray-400">Total:</span>{' '}
-                              <span className="font-medium">${booking.totalPrice.toFixed(2)}</span>
+                              <span className="font-medium">₹{booking.totalPrice.toFixed(2)}</span>
                             </div>
                           </div>
                           

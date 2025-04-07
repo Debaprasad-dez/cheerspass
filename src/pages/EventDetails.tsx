@@ -181,22 +181,22 @@ const EventDetails = () => {
               <div className="mb-6">
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-gray-300">Price per ticket:</span>
-                  <span className="font-bold text-xl">${event.price.toFixed(2)}</span>
+                  <span className="font-bold text-xl">₹{event.price.toFixed(2)}</span>
                 </div>
                 <div className="border-t border-white/10 pt-4 mb-4">
                   <div className="flex items-center justify-between mb-1">
                     <span className="text-sm text-gray-400">Service fee:</span>
-                    <span className="text-sm text-gray-400">$2.50</span>
+                    <span className="text-sm text-gray-400">₹2.50</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-400">Processing fee:</span>
-                    <span className="text-sm text-gray-400">$1.00</span>
+                    <span className="text-sm text-gray-400">₹1.00</span>
                   </div>
                 </div>
                 <div className="flex justify-between items-center pt-2 border-t border-white/10">
                   <span className="font-medium">Total:</span>
                   <span className="font-bold text-neon-blue">
-                    ${(event.price + 3.5).toFixed(2)}
+                  ₹{(event.price + 3.5).toFixed(2)}
                   </span>
                 </div>
               </div>
@@ -242,15 +242,15 @@ const EventDetails = () => {
             <div className="bg-white/5 p-4 rounded-md space-y-2">
               <div className="flex justify-between">
                 <span className="text-gray-300">Price ({quantity} x ${event.price.toFixed(2)})</span>
-                <span>${(quantity * event.price).toFixed(2)}</span>
+                <span>₹{(quantity * event.price).toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-300">Fees</span>
-                <span>${(3.5 * quantity).toFixed(2)}</span>
+                <span>₹{(3.5 * quantity).toFixed(2)}</span>
               </div>
               <div className="flex justify-between font-bold border-t border-white/10 pt-2 mt-2">
                 <span>Total</span>
-                <span className="text-neon-blue">${((event.price + 3.5) * quantity).toFixed(2)}</span>
+                <span className="text-neon-blue">₹{((event.price + 3.5) * quantity).toFixed(2)}</span>
               </div>
             </div>
           </div>

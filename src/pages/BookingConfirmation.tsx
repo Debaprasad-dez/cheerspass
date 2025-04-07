@@ -91,7 +91,7 @@ const BookingConfirmation = () => {
                 <span>{booking.quantity}</span>
                 
                 <span className="text-gray-400">Total Amount</span>
-                <span>${booking.totalPrice.toFixed(2)}</span>
+                <span>₹{booking.totalPrice.toFixed(2)}</span>
                 
                 <span className="text-gray-400">Booking Date</span>
                 <span>{new Date(booking.bookingDate).toLocaleDateString()}</span>
